@@ -22,6 +22,17 @@
 \usepackage{amssymb}
 \usepackage{geometry}
 
+
+%
+% GETS RID OF INDENTATION IN LIST OF FIGURES/LIST OF TABLES
+% Added April 2017
+% 
+\makeatletter
+\renewcommand*\l@figure{\@dottedtocline{1}{0em}{2.3em}}% Default: 1.5em/2.3em
+\let\l@table\l@figure
+\makeatother
+
+
 %% Reduce spacing between paragraph and section title %%%%%%%
 %% @todo: Put this modification in the class file itself.
 \usepackage{titlesec}
