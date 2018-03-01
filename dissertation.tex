@@ -21,17 +21,31 @@
 \usepackage{bbm}
 \usepackage{amssymb}
 \usepackage{geometry}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+%\usepackage{lgrind}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+
 
 
 %
 % GETS RID OF INDENTATION IN LIST OF FIGURES/LIST OF TABLES
-% Added April 2017
-% 
+%
 \makeatletter
 \renewcommand*\l@figure{\@dottedtocline{1}{0em}{2.3em}}% Default: 1.5em/2.3em
 \let\l@table\l@figure
 \makeatother
 
+
+
+
+
+% USER DEFINED COMMANDS
+\newtheorem{theorem}{Theorem}
 
 %% Reduce spacing between paragraph and section title %%%%%%%
 %% @todo: Put this modification in the class file itself.
@@ -60,14 +74,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOCUMENT SETTINGS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Dissertation Title}
-\author{Dissertation Author}
-\committee{Advisor}{Committee Member}{Committee Member}{Committee Member}{Committee Member}
-\date{January 1, 1970}
+\title{Dissertation Title Goes Here}
+\author{Your Name Goes Here}
+\committee{Primary Advisor}{Committee Member 1}{Committee Member 2}{Committee Member 3}{Committee Member 4}
+\date{February 23, 2016}
 
 \input{abstract.tex}
 
-\dedication{To someone}
+\dedication{To whomever you like...}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % GLOSSARIES AND ABBREVIATIONS
@@ -151,6 +165,14 @@
 \chapter{Chapter 2}
 \input{chapter2.tex}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% APPENDICES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+
+% First Appendix
+\input{appendixA.tex}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% BIBLIOGRAPHY AND OTHER LISTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -164,11 +186,6 @@
 % Add bibliography to contents page
 %\addcontentsline{toc}{chapter}{Bibliography} %'Bibliography' into toc
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% APPENDICES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix
-\chapter{}
-\section{}
+
 
 \end{document}

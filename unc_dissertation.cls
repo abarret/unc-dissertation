@@ -7,9 +7,8 @@
 %% Please do not change this file without renaming it first.
 %%
 %%
-%% Last Modified
-%%				      April, 2017 by Nick Battista, Caitlin Hult, Timothy Wessler 
-%%		              November, 2013 by Jake Fowler
+%% Last Modified: April, 2017 by Nick Battista, Caitlin Hult, Timothy Wessler 
+%%                  November, 2013 by Jake Fowler
 %%				       July, 2010 by Brian Pike
 %%				       April, 2007 by Liz Bouzarth
 %%               April, 2007 by Liz Sell
@@ -734,8 +733,8 @@
 % Displays the main title, either in allcaps, large and bold, or in Large font, depending on the allcaps option. The \textls adds letterspacing to the allcaps titles, so they look better.
 \newcommand{\my@displaymaintitle}{%
   \ifmy@allcaps%
-    {\large \textls*[25]{\textbf{\MakeUppercase{\@title}}}}% 
-    {\normal \textls*[25]{\textbf{\MakeUppercase{\@title}}}} %Added April 2017
+    %{\large \textls*[25]{\textbf{\MakeUppercase{\@title}}}}% CHANGE FONT SIZE
+    {\normalsize \textls*[25]{\textbf{\MakeUppercase{\@title}}}}%
   \else%
     { \textbf{\@title}}%
   \fi%
@@ -852,8 +851,8 @@
     \fi
     \my@isalisttrue
     \chapter*{\listfigurename}%
-      \@mkboth{\MakeUppercase\listfigurename}%
-              {\MakeUppercase\listfigurename}%
+        \@mkboth{\MakeUppercase\listfigurename}%
+                {\MakeUppercase\listfigurename}%
     \@starttoc{lof}%
     
     \if@restonecol\twocolumn\fi
